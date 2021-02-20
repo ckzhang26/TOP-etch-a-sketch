@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    
+    <main>
+
+        <div class="main-left">
+            <div class="info">
+                <h1>Etch-A-Sketch</h1>
+                <h2>Hold down D key and mouse over to draw</h2>
+            </div>
+            <div class="inputs">
+                <label for="grid-number">Number of Rows/Columns</label>
+                <input id="grid-number" type="number">
+                <div class="grid-buttons">
+                    <button id="create"> Create Grid </button>
+                    <button id="reset"> Reset Grid </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="grid-container"></div>
+
+        <div class="main-right">
+            <h2>Color</h2>
+            <div class="color-display"></div>
+
+            <div class="color-button-container">
+                <button class="color-button" data-color="white"></button>
+                <button class="color-button" data-color="black"></button>
+                <button class="color-button" data-color="red"></button>
+                <button class="color-button" data-color="orange"></button>
+                <button class="color-button" data-color="yellow"></button>
+                <button class="color-button" data-color="green"></button>
+                <button class="color-button" data-color="blue"></button>
+                <button class="color-button" data-color="indigo"></button>
+                <button class="color-button" data-color="violet"></button>
+            </div>
+            <button class="color-button" data-color="rainbow">Rainbow</button>
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+body * {
+    box-sizing: border-box;
+    display: block;
+}
+
+body {
+    background: radial-gradient(white, rgb(253, 194, 198));
+}
+
+/* MAIN LAYOUT */
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-left, .main-right {
+    width: calc( (100vw - 960px) / 2 );
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -50px;
+}
+
+.info {
+    text-align: center;
+}
+
+.inputs {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputs input {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.inputs button {
+    width: 100px;
+    height: 50px;
+}
+
+.grid-buttons {
+    margin-top: 20px;
+}
+
+
+
+/* COLOR BUTTONS */
+.color-display {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 50px;
+    background: black;
+    border: 2px solid black;
+}
+
+.color-button-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    justify-content: center;
+    justify-items: center;
+}
+
+.color-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.color-button-selected {
+    border: 5px solid cyan;
+    transform: scale(1.5);
+}
+
+.color-button[data-color="red"]{
+    background: red;
+}
+
+.color-button[data-color="orange"]{
+    background: orange;
+}
+
+.color-button[data-color="yellow"]{
+    background: yellow;
+}
+
+.color-button[data-color="green"] {
+    background: green;
+}
+
+.color-button[data-color="blue"]{
+    background: blue;
+}
+
+.color-button[data-color="indigo"]{
+    background: indigo;
+}
+
+.color-button[data-color="violet"]{
+    background: violet;
+}
+
+.color-button[data-color="black"]{
+    background: black;
+}
+
+.color-button[data-color="white"]{
+    background: white;
+}
+
+.color-button[data-color="rainbow"]{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+}
+
+
+
+/* GRID */
+#grid-container {
+    display: grid;
+    width: 960px;
+    height: 960px;
+    margin-top: 15px;
+}
+
+.cell {
+    background: white;
+    border: 1px solid black;
+}
+
+
